@@ -1,0 +1,46 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\fjordlauncher.exe]
+@="Minecraft Mod-Pack"
+
+[HKEY_CURRENT_USER\Software\Classes\fjordlauncher.exe\DefaultIcon]
+@="$EXEPATH,0"
+
+[HKEY_CURRENT_USER\Software\Classes\fjordlauncher.exe\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\fjordlauncher.exe\shell\open]
+@="Import into Fjord Launcher"
+
+[HKEY_CURRENT_USER\Software\Classes\fjordlauncher.exe\shell\open\command]
+@="$EXEPATH"
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\fjordlauncher.exe\shell\open\command]
+@="$EXEPATH -I \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\fjordlauncher.exe]
+"FriendlyAppName"= "Fjord Launcher"
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\fjordlauncher.exe\Capabilities]
+"ApplicationDescription"="Minecraft Mod-Pack"
+
+[HKEY_CURRENT_USER\Software\RegisteredApplications]
+"Fjord Launcher"="Software\Classes\Applications\fjordlauncher.exe\Capabilities"
+
+[HKEY_CURRENT_USER\Software\Classes\.zip\OpenWithList]
+"fjordlauncher.exe"=""
+
+[HKEY_CURRENT_USER\Software\Classes\.zip\OpenWithProgids]
+"fjordlauncher.exe"=""
+
+[HKEY_CURRENT_USER\Software\Classes\.mrpack\OpenWithList]
+"fjordlauncher.exe"=""
+
+[HKEY_CURRENT_USER\Software\Classes\.mrpack\OpenWithProgids]
+"fjordlauncher.exe"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\fjordlauncher.exe\Capabilities\FileAssociations]
+".mrpack"="fjordlauncher.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\fjordlauncher.exe\Capabilities\FileAssociations]
+".zip"="fjordlauncher.exe"
