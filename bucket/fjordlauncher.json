@@ -12,7 +12,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/unmojang/FjordLauncher/releases/download/8.4/FjordLauncher-Windows-MSVC-Portable-8.4.zip",
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "hash": "6c7d3bf0059e991d3e7660d64af399781e0d1a111da13988a2178bd6546613e9"
         }
     },
     "suggest": {
