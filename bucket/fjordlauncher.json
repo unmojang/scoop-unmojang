@@ -1,5 +1,5 @@
 {
-    "version": "8.3.2",
+    "version": "8.4",
     "description": "An open source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
     "homepage": "https://github.com/unmojang/FjordLauncher/",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/unmojang/FjordLauncher/releases/download/8.3.2/FjordLauncher-Windows-MSVC-Portable-8.3.2.zip",
-            "hash": "be25201af95b3163f1a4a6710dbf4363dd42dd2c4c129559fe536f106cfb44b0"
+            "url": "https://github.com/unmojang/FjordLauncher/releases/download/8.4/FjordLauncher-Windows-MSVC-Portable-8.4.zip",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
     },
     "suggest": {
