@@ -1,6 +1,6 @@
 {
     "version": "8.4",
-    "description": "An open source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
+    "description": "Prism Launcher fork with support for alternative auth servers",
     "homepage": "https://github.com/unmojang/FjordLauncher/",
     "license": "GPL-3.0-only",
     "notes": [
@@ -79,7 +79,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/FjordLauncher/FjordLauncher/releases/download/$version/FjordLauncher-Windows-MSVC-Portable-$version.zip"
+                "url": "https://github.com/unmojang/FjordLauncher/releases/download/$version/FjordLauncher-Windows-MSVC-Portable-$version.zip"
             }
         }
     }
