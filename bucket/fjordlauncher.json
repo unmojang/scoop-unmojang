@@ -1,7 +1,7 @@
 {
-    "version": "8.4.2",
+    "version": "9.1.1",
     "description": "Prism Launcher fork with support for alternative auth servers",
-    "homepage": "https://github.com/unmojang/FjordLauncher/",
+    "homepage": "https://github.com/unmojang/FjordLauncher",
     "license": "GPL-3.0-only",
     "notes": [
         "To add Fjord Launcher file association options for .ZIPs and .MRPACKS, run this: \"$dir\\install-associations.reg\"",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/unmojang/FjordLauncher/releases/download/8.4.2/FjordLauncher-Windows-MSVC-Portable-8.4.2.zip",
-            "hash": "47f23de374cfce479e7fe284ed24edf48401d0aaaebd2b5cbee95cd557ccaeda"
+            "url": "https://github.com/unmojang/FjordLauncher/releases/download/9.1.0/FjordLauncher-Windows-MSVC-Portable-9.1.0.zip",
+            "hash": "a9821c06a9d07b8f6ba2ec8c0517107c821cb292404ffdf203e505dd8740db56"
         }
     },
     "suggest": {
@@ -34,10 +34,13 @@
         "",
         "'accounts.json', 'metacache', 'fjordlauncher.cfg' | ForEach-Object {",
         "    if (!(Test-Path -Path $persist_dir\\$_)) {",
-        "        New-Item -Type File $dir/$_ | Out-Null",
+        "        New-Item -Type File $persist_dir/$_ | Out-Null",
         "    }",
+        "    New-Item -Type SymbolicLink -Value $persist_dir/$_ -Path $dir/$_ | Out-Null",
         "}",
-        "Add-Content $dir/metacache '{}'"
+        "if (!(Get-Content $persist_dir/metacache)) {",
+        "    Add-Content $persist_dir/metacache '{}'",
+        "}"
     ],
     "post_install": [
         "'install-associations', 'uninstall-associations' | ForEach-Object {",
@@ -68,10 +71,7 @@
         "meta",
         "mods",
         "themes",
-        "translations",
-        "accounts.json",
-        "metacache",
-        "fjordlauncher.cfg"
+        "translations"
     ],
     "checkver": {
         "github": "https://github.com/unmojang/FjordLauncher"
