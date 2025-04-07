@@ -1,5 +1,5 @@
 {
-    "version": "9.2.4",
+    "version": "9.3.0",
     "description": "Prism Launcher fork with support for alternative auth servers",
     "homepage": "https://github.com/unmojang/FjordLauncher",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/unmojang/FjordLauncher/releases/download/9.2.4/FjordLauncher-Windows-MSVC-Portable-9.2.4.zip",
-            "hash": "ab49d83322d6f9fdbcf9a3c4f175d7353427e0c46d0036d124d61bf1e104b539"
+            "url": "https://github.com/unmojang/FjordLauncher/releases/download/9.3.0/FjordLauncher-Windows-MSVC-Portable-9.3.0.zip",
+            "hash": "bee6376bc545b7caac38d426e69620faa49f65e4e7a66fa73b654e8c91487de1"
         }
     },
     "suggest": {
